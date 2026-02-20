@@ -273,17 +273,17 @@ export class WorkspaceRuntime {
       },
     });
 
-    const executableScript = prepareUserScript(script);
-
     const wrappedScript = `
 (async () => {
   const { auth, google, workspace, state } = __api;
-  ${executableScript}
+  ${script}
 })()
 `;
 
+    const executableScript = prepareUserScript(wrappedScript);
+
     try {
-      const compiled = new vm.Script(wrappedScript, {
+      const compiled = new vm.Script(executableScript, {
         filename: 'workspace-execute.js',
         displayErrors: true,
       });
