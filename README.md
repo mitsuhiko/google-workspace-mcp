@@ -1,5 +1,20 @@
 # Google Workspace Code MCP
 
+**Important: This is an alternative experiment, not my primary setup**
+
+If you are looking for the Google Workspace integration I actually use day-to-day, use this skill instead:
+
+- **Primary skill:** https://github.com/mitsuhiko/agent-stuff/tree/main/skills/google-workspace
+
+This repository is an **alternative code-first MCP experiment** built around one `execute` tool.
+It is intentionally aligned with the ideas in:
+
+- **Your MCP Doesn’t Need 30 Tools: It Needs Code** — https://lucumr.pocoo.org/2025/8/18/code-mcps/
+
+That post explores code-supported/code-first MCP design (fewer fixed tools, more programmable capability).
+
+---
+
 A local JavaScript/TypeScript MCP server with a **single tool**: `execute`.
 
 `execute` runs JavaScript (or TypeScript with type stripping) and gives that code authenticated access to Google Workspace APIs.
