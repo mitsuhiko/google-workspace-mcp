@@ -1,0 +1,28 @@
+{
+  "name": "google-workspace-code-mcp",
+  "version": "0.1.0",
+  "description": "Single-tool MCP server that executes JavaScript with authenticated Google Workspace API access",
+  "type": "module",
+  "main": "src/server.js",
+  "bin": {
+    "google-workspace-code-mcp": "src/server.js"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "check": "node --check src/server.js && node --check src/google-auth.js && node --check src/runtime.js"
+  },
+  "keywords": [
+    "mcp",
+    "google-workspace",
+    "javascript",
+    "code-mode"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/local-auth": "^3.0.1",
+    "@modelcontextprotocol/sdk": "^1.26.0",
+    "googleapis": "^171.4.0",
+    "zod": "^4.3.6"
+  }
+}

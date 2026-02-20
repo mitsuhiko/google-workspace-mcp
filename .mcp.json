@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "google-workspace-code": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "/Users/mitsuhiko/Development/workspace-mcp/src/server.js"
+      ],
+      "env": {
+        "GOOGLE_WORKSPACE_AUTH_MODE": "cloud"
+      }
+    }
+  }
+}
